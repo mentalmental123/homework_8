@@ -1,0 +1,38 @@
+// reset components
+@import './base/reset';
+
+
+// utils
+@import './utils/variables';
+
+
+// base
+@import './base/base';
+
+
+// components
+@import './components/backdrop';
+@import './components/logo';
+@import './components/features';
+@import './components/hero';
+@import './components/hidden-header';
+@import './components/jobs';
+@import './components/mailing';
+@import './components/portfolio';
+@import './components/project-sell';
+@import './components/project';
+@import './components/regular_cusomer';
+@import './components/team';
+@import './components/social-menu';
+
+
+// layouts
+@import './layuot/footer';
+@import './layuot/form';
+@import './layuot/modal';
+@import './layuot/grid';
+@import './layuot/header';
+
+
+//components fianl compilation
+@import './components/cover';

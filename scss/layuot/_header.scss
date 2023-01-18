@@ -1,0 +1,97 @@
+.header {
+    border-bottom: 1px solid #EEEEEE;
+    box-sizing: border-box;
+
+
+    &__nav-part,
+    &__contact {
+        transition: color 250ms var(--anim-cubic-value);
+    }
+
+   
+    &__nav-part {
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.2;
+     letter-spacing: 0.02em;
+     padding: 32px 0;
+     display: block;
+
+     &:hover,
+     &:focus {
+         color: var(--logo-blue-color);
+     }
+
+     &--current {
+         position: relative;
+         color: var(--logo-blue-color);
+
+         &::after {
+             position: absolute;
+             left: 0;
+             bottom: calc(0% - 1px);
+
+             content: "";
+             display: block;
+             height: 4px;
+             width: 100%;
+             border-radius: 10px;
+             background-color: var(--logo-blue-color);
+         }
+     }
+   
+    }
+
+   
+   
+
+
+
+    &__contact {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--gray-text-color);
+        display: flex;
+
+        &:hover,
+        &:focus {
+            color: var(--logo-blue-color);
+        }
+    }
+
+ 
+
+
+
+
+    &__flexbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__menu--nav-elements {
+        margin-left: 93px;
+    }
+
+    &__contact-icons {
+        height: 16px;
+        width: 16px;
+        margin-right: 10px;
+    }
+
+}

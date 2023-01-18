@@ -1,0 +1,28 @@
+.jobs{
+    &__type-list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__img-container {
+        position: relative;
+    }
+
+
+    &__part-descr {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        line-height: 1.422;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--total-white);
+        background-color: var(--job-section-back-alpha-color);
+        padding: 27px;
+        text-align: center;
+        width: 100%;
+    }
+}
+

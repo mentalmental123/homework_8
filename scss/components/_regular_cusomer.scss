@@ -1,0 +1,33 @@
+
+.regular-customers{
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icons {
+        width: 106px;
+        height: 60px;
+    }
+
+    &__list-links {
+        border: 1px solid var(--icon-inactive-grey-color);
+        border-radius: 5px;
+        display: inline-block;
+        width: 170px;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--icon-inactive-grey-color);
+        transition: color 250ms var(--anim-cubic-value), border-color 250ms var(--anim-cubic-value);
+
+        &:hover,
+        &:focus {
+            color: var(--logo-blue-color);
+            border-color: var(--logo-blue-color);
+        }       
+    }
+}
+
+

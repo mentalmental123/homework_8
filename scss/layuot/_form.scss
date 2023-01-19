@@ -43,16 +43,32 @@
 
                 &__checkbox-main-text {
                     font-weight: 400;
-                    font-size: 14px;
-                    line-height: 1.71;
+                    font-size: 12px;
+                    line-height: 1.1666;
+                    
                     letter-spacing: 0.03em;
                     color: var(--gray-text-color);
+                    @media screen and (min-width: 1200px) {
+                        font-size: 14px;
+                        line-height: 1.71;
+                    }
                 }
         
                 &__checkbox-policy-link {
+                    margin-left: 7px;
+
                     text-decoration-line: underline;
                     color: var(--logo-blue-color);
-                    margin-left: 7px;
+                
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 1.1666;
+                    letter-spacing: 0.03em;
+                    
+                    @media screen and (min-width: 1200px) {
+                        font-size: 14px;
+                        line-height: 1.71;
+                    }
                 }
         
                 &__button {

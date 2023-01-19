@@ -7,6 +7,7 @@
             gap: 70px;
             align-items: baseline;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
         &__social-menu{
             margin-top: 20px;
@@ -20,9 +21,32 @@
         &__contact:last-child {
             margin-bottom: 0;
         }
+
+
     
         &__logo {
-            margin-bottom: 20px;
+            margin-bottom: 20px; 
+            text-align: center;
+            @media screen and (min-width: 1200px) {
+                text-align: left;
+            }
+        }
+
+        &__cotact-list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @media screen and (min-width: 1200px) {
+            align-items: flex-start;
+            }
+        }
+
+        &__address-thumb{
+            margin: 0 auto;
+             @media screen and (min-width: 1200px) {
+                margin: 0;
+            }
         }
     
         &__address {

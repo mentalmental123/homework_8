@@ -1,20 +1,49 @@
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media  screen and (min-width: 480px) {
+        width: 480px;
+        
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+
+    &--header{
+        padding: 12px;
+    }
+
 }
 
 .section {
-    padding: 94px 0;
+    
 }
 
 .section-title {
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    &__gap {
-            margin-bottom: 50px;
-        }
+    
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+         text-align: center;
+         letter-spacing: 0.03em;
+         font-size: 28px;
+         line-height: 1.178;
+    
+         &__gap {
+             margin-bottom: 30px;
+         }
 }
+    
+
+   

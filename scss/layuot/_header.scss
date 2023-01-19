@@ -2,6 +2,9 @@
     border-bottom: 1px solid #EEEEEE;
     box-sizing: border-box;
 
+    &__contact-nav-thumb{
+        display: none;
+    }
 
     &__nav-part,
     &__contact {
@@ -67,21 +70,43 @@
 
 
     &__flexbox {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 80px;
+        
+        height: 60px;
+        @media screen and (min-width: 768px) {
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
     }
 
     &__navigation {
         display: flex;
         align-items: center;
+
+        justify-content: space-between;
     }
 
     &__menu {
-        display: flex;
-        align-items: center;
-        gap: 50px;
+        // display: flex;
+        // align-items: center;
+        // gap: 50px;
+        display: none;
+
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        &--contact{
+        @media screen and (min-width: 768px) and (max-width:1200px) {
+            flex-direction: column;
+            gap: 10px;
+            align-items: baseline;
+        }
+        }
     }
 
     &__menu--nav-elements {
@@ -93,5 +118,12 @@
         width: 16px;
         margin-right: 10px;
     }
+
+    &__burger-icon{
+        width: 40px;
+        height: 40px;
+        fill: var(--total-black);
+    }
+   
 
 }

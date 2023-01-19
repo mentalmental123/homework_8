@@ -1,4 +1,11 @@
 .jobs{
+    padding: 0 0 94px 0;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+
     &__type-list {
         display: flex;
         gap: 30px;

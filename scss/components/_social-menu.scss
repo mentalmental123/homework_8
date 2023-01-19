@@ -46,7 +46,9 @@
         &:focus {
             background-color: var(--logo-blue-color);
         }
-
+        &--center{
+            margin: 0 auto;
+        }
 
         }
         
@@ -67,7 +69,14 @@
     color: #FFFFFF;
 }
 
-
+.social-links-footer-section{
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        text-align: left;
+    }
+}
 
 
 

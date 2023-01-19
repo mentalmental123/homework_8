@@ -6,69 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
 
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/main.min.css">
-
-    
+    <link rel="stylesheet" href="/css/main.min.css" />
   </head>
-  <body>
+  <body style>
+
     <header class="header">
-      <section class="header__flexbox wrapper">
+      <section class="header__flexbox wrapper wrapper--header">
         <nav class="header__navigation">
-          <a class="logo" href="./index.html"
-            ><span class="logo__blue--text">Web</span
-            ><span class="logo__balck--text">Studio</span></a
-          >
-          <ul class="header__menu header__menu--nav-elements">
-            <li>
-              <a class="header__nav-part--current header__nav-part" href="./index.html"
-                >Студія</a
-              >
-            </li>
-            <li>
-              <a class="header__nav-part" href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li>
-              <a class="header__nav-part" href="#">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        
-          <ul class="header__menu">
-            <li>
-              <a class="header__contact" href="mailto:info@devstudio.com" lang="en">
-                <svg class="icon icon-emailicon-min header__contact-icons">
-                  <use
-                    href="./img/page1/icons/sprite.svg#icon-emailicon-min"
-                  ></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="header__contact" href="tel:+380961111111">
-                <svg class="icon icon-phoneicon-min header__contact-icons">
-                  <use
-                    href="./img/page1/icons/sprite.svg#icon-phoneicon-min"
-                  ></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          
+          
+            <a class="logo" href="./index.html"
+              ><span class="logo__blue--text">Web</span
+              ><span class="logo__balck--text">Studio</span>
+            </a>
+            <button class="menu__toggle-burger-button js-open-menu" aria-expanded="false" aria-controls="modile-menu">
+              <svg class="header__burger-icon">
+                <use href="./img/page1/icons/sprite.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
+          
+            <ul class="header__menu header__menu--nav-elements">
+              <li>
+                <a class="header__nav-part--current header__nav-part" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li>
+                <a class="header__nav-part" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li>
+                <a class="header__nav-part" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+            <ul class="header__menu header__menu--contact">
+              <li>
+                <a class="header__contact" href="mailto:info@devstudio.com" lang="en">
+                  <svg class="icon icon-emailicon-min header__contact-icons">
+                    <use
+                      href="./img/page1/icons/sprite.svg#icon-emailicon-min"
+                    ></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="header__contact" href="tel:+380961111111">
+                  <svg class="icon icon-phoneicon-min header__contact-icons">
+                    <use
+                      href="./img/page1/icons/sprite.svg#icon-phoneicon-min"
+                    ></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+  
         
       </section>
     </header>
 
     <main>
+      
       <section class="hero">
         <div class="wrapper">
           <h1 class="hero__header">
@@ -80,394 +88,388 @@
           </button>
         </div>
       </section>
-
-      <section class="section">
+      
+      <section class="features">
         <div class="wrapper">
-          <div class="features">
-            <h2 class="hidden-header">Наші риси</h2>
-            <ul class="features__list">
-              <li class="features__part features__part--antenna-image">
-                <h2 class="features__header">УВАГА ДО ДЕТАЛЕЙ</h2>
-                <p class="features__desk">
-                  Ідейні міркування, і навіть початок повсякденної роботи з
-                  формування позиції.
-                </p>
-              </li>
-              <li class="features__part features__part--clock-image">
-                <h2 class="features__header">ПУНКТУАЛЬНІСТЬ</h2>
-                <p class="features__desk">
-                  Завдання організації, особливо рамки і місце навчання кадрів
-                  тягне у себе.
-                </p>
-              </li>
-              <li class="features__part features__part--computer-image">
-                <h2 class="features__header">ПЛАНУВАННЯ</h2>
-                <p class="features__desk">
-                  Так само консультація з широким активом значною мірою зумовлює.
-                </p>
-              </li>
-              <li class="features__part features__part--astronaut-image">
-                <h2 class="features__header">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-                <p class="features__desk">
-                  Значимість цих проблем настільки очевидна, що реалізація
-                  планових завдань.
-                </p>
-              </li>
-            </ul>
-          </div>
+          <h2 class="hidden-header">Наші риси</h2>
+          <ul class="features__list">
+            <li class="features__part features__part--antenna-image">
+              <h2 class="features__header">УВАГА ДО ДЕТАЛЕЙ</h2>
+              <p class="features__desk">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="features__part features__part--clock-image">
+              <h2 class="features__header">ПУНКТУАЛЬНІСТЬ</h2>
+              <p class="features__desk">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="features__part features__part--computer-image">
+              <h2 class="features__header">ПЛАНУВАННЯ</h2>
+              <p class="features__desk">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="features__part features__part--astronaut-image">
+              <h2 class="features__header">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+              <p class="features__desk">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section class="section null-jobs-section">
+      <section class="jobs">
         <div class="wrapper">
-          <div class="jobs">
-            <h2 class="section-title section-title__gap">Чим ми займаємося</h2>
-            <ul class="jobs__type-list">
-              <li class="jobs__part">
-                <div class="jobs__img-container">
-                  <img
-                    width="370"
-                    src="./img/page1/wtwedo.jpg"
-                    alt="руки на клавіатурі"
-                  />
-                  <h3 class="jobs__part-descr">Десктопні додатки</h3>
-                </div>
-              </li>
-              <li class="jobs__part">
-                <div class="jobs__img-container">
-                  <img
-                    width="370"
-                    src="./img/page1/wtwedo1.jpg"
-                    alt="людина з телефоном"
-                  />
-                  <h3 class="jobs__part-descr">Мобільні додатки</h3>
-                </div>
-              </li>
-              <li class="jobs__part">
-                <div class="jobs__img-container">
-                  <img
-                    width="370"
-                    src="./img/page1/wtwedo2.jpg"
-                    alt="кольорова гамма"
-                  />
-                  <h3 class="jobs__part-descr">Дизайнерські рішення</h3>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <h2 class="section-title section-title__gap">Чим ми займаємося</h2>
+          <ul class="jobs__type-list">
+            <li class="jobs__part">
+              <div class="jobs__img-container">
+                <img
+                  width="370"
+                  src="./img/page1/wtwedo.jpg"
+                  alt="руки на клавіатурі"
+                />
+                <h3 class="jobs__part-descr">Десктопні додатки</h3>
+              </div>
+            </li>
+            <li class="jobs__part">
+              <div class="jobs__img-container">
+                <img
+                  width="370"
+                  src="./img/page1/wtwedo1.jpg"
+                  alt="людина з телефоном"
+                />
+                <h3 class="jobs__part-descr">Мобільні додатки</h3>
+              </div>
+            </li>
+            <li class="jobs__part">
+              <div class="jobs__img-container">
+                <img
+                  width="370"
+                  src="./img/page1/wtwedo2.jpg"
+                  alt="кольорова гамма"
+                />
+                <h3 class="jobs__part-descr">Дизайнерські рішення</h3>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section class="section bg-team-section">
+      <section class="team">
         <div class="wrapper">
-          <div class="team">
-            <h2 class="section-title section-title__gap">Наша команда</h2>
-            <ul class="team__actor-list">
-              <li>
-                <img
-                  width="270"
-                  src="./img/page1/actor1.jpg"
-                  alt="наш співробітник"
-                />
-                <div class="team__actor-part">
-                  <h3 class="team__actor-header">Ігор Дем'яненко</h3>
-                  <p class="team__actor-role">Product Designer</p>
-                  <ul class="social-menu team__social-menu">
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://www.instagram.com/"
-                      >
-                        <svg class="icon icon-instagram-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-instagram-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://twitter.com/?lang=uk"
-                      >
-                        <svg class="icon icon-twitter-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-twitter-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://uk-ua.facebook.com/"
-                      >
-                        <svg class="icon icon-facebook-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-facebook-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://www.linkedin.com/"
-                      >
-                        <svg class="icon icon-linkedin-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-linkedin-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="team-part">
-                <img
-                  width="270"
-                  src="./img/page1/actor2.jpg"
-                  alt="наш співробітник"
-                />
-                <div class="team__actor-part">
-                  <h3 class="team__actor-header">Ольга Рєпіна</h3>
-                  <p class="team__actor-role">Frontend Developer</p>
-                  <ul class="social-menu team__social-menu">
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://www.instagram.com/"
-                      >
-                        <svg class="icon icon-instagram-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-instagram-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://twitter.com/?lang=uk"
-                      >
-                        <svg class="icon icon-twitter-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-twitter-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://uk-ua.facebook.com/"
-                      >
-                        <svg class="icon icon-facebook-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-facebook-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://www.linkedin.com/"
-                      >
-                        <svg class="icon icon-linkedin-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-linkedin-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="team-part">
-                <img
-                  width="270"
-                  src="./img/page1/actor3.jpg"
-                  alt="наш співробітник"
-                />
-                <div class="team__actor-part">
-                  <h3 class="team__actor-header">Микола Тарасов</h3>
-                  <p class="team__actor-role">Marketing</p>
-                 <ul class="social-menu team__social-menu">
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://www.instagram.com/"
-                      >
-                        <svg class="icon icon-instagram-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-instagram-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://twitter.com/?lang=uk"
-                      >
-                        <svg class="icon icon-twitter-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-twitter-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://uk-ua.facebook.com/"
-                      >
-                        <svg class="icon icon-facebook-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-facebook-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://www.linkedin.com/"
-                      >
-                        <svg class="icon icon-linkedin-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-linkedin-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                  </div>
+          <h2 class="section-title section-title__gap">Наша команда</h2>
+          <ul class="team__actor-list">
+            <li>
+              <img
+                width="270"
+                src="./img/page1/actor1.jpg"
+                alt="наш співробітник"
+              />
+              <div class="team__actor-part">
+                <h3 class="team__actor-header">Ігор Дем'яненко</h3>
+                <p class="team__actor-role">Product Designer</p>
+                <ul class="social-menu team__social-menu">
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg class="icon icon-instagram-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-instagram-min"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="team-part">
-                <img
-                  width="270"
-                  src="./img/page1/actor4.jpg"
-                  alt="наш співробітник"
-                />
-                <div class="team__actor-part">
-                  <h3 class="team__actor-header">Микола Тарасов</h3>
-                  <p class="team__actor-role">Marketing</p>
-                 <ul class="social-menu team__social-menu">
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://www.instagram.com/"
-                      >
-                        <svg class="icon icon-instagram-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-instagram-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://twitter.com/?lang=uk"
-                      >
-                        <svg class="icon icon-twitter-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-twitter-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://uk-ua.facebook.com/"
-                      >
-                        <svg class="icon icon-facebook-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-facebook-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="social-menu__links"
-                        target="_blank"
-                        href="https://www.linkedin.com/"
-                      >
-                        <svg class="icon icon-linkedin-min social-menu__icon">
-                          <use
-                            href="./img/page1/icons/sprite.svg#icon-linkedin-min"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                  </div>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://twitter.com/?lang=uk"
+                    >
+                      <svg class="icon icon-twitter-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-twitter-min"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
-                  </ul>
-            </div>
-          </div>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://uk-ua.facebook.com/"
+                    >
+                      <svg class="icon icon-facebook-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-facebook-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://www.linkedin.com/"
+                    >
+                      <svg class="icon icon-linkedin-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-linkedin-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-part">
+              <img
+                width="270"
+                src="./img/page1/actor2.jpg"
+                alt="наш співробітник"
+              />
+              <div class="team__actor-part">
+                <h3 class="team__actor-header">Ольга Рєпіна</h3>
+                <p class="team__actor-role">Frontend Developer</p>
+                <ul class="social-menu team__social-menu">
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg class="icon icon-instagram-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-instagram-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://twitter.com/?lang=uk"
+                    >
+                      <svg class="icon icon-twitter-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-twitter-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://uk-ua.facebook.com/"
+                    >
+                      <svg class="icon icon-facebook-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-facebook-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://www.linkedin.com/"
+                    >
+                      <svg class="icon icon-linkedin-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-linkedin-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-part">
+              <img
+                width="270"
+                src="./img/page1/actor3.jpg"
+                alt="наш співробітник"
+              />
+              <div class="team__actor-part">
+                <h3 class="team__actor-header">Микола Тарасов</h3>
+                <p class="team__actor-role">Marketing</p>
+                <ul class="social-menu team__social-menu">
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg class="icon icon-instagram-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-instagram-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://twitter.com/?lang=uk"
+                    >
+                      <svg class="icon icon-twitter-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-twitter-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://uk-ua.facebook.com/"
+                    >
+                      <svg class="icon icon-facebook-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-facebook-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://www.linkedin.com/"
+                    >
+                      <svg class="icon icon-linkedin-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-linkedin-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-part">
+              <img
+                width="270"
+                src="./img/page1/actor4.jpg"
+                alt="наш співробітник"
+              />
+              <div class="team__actor-part">
+                <h3 class="team__actor-header">Микола Тарасов</h3>
+                <p class="team__actor-role">Marketing</p>
+                <ul class="social-menu team__social-menu">
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg class="icon icon-instagram-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-instagram-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://twitter.com/?lang=uk"
+                    >
+                      <svg class="icon icon-twitter-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-twitter-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://uk-ua.facebook.com/"
+                    >
+                      <svg class="icon icon-facebook-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-facebook-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-menu__links"
+                      target="_blank"
+                      href="https://www.linkedin.com/"
+                    >
+                      <svg class="icon icon-linkedin-min social-menu__icon">
+                        <use
+                          href="./img/page1/icons/sprite.svg#icon-linkedin-min"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="section regular-customer">
+      <section class="regular-customers">
         <div class="wrapper">
           <h2 class="section-title section-title__gap">Постійні клієнти</h2>
           <ul class="regular-customers__list">
-            <li>
+            <li class="regular-customers__part">
               <a class="regular-customers__list-links" href="">
                 <svg class="icon icon-company1 regular-customers__icons">
                   <use href="./img/page1/icons/sprite.svg#icon-company1"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="regular-customers__part">
               <a class="regular-customers__list-links" href="">
                 <svg class="icon icon-company2 regular-customers__icons">
                   <use href="./img/page1/icons/sprite.svg#icon-company2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="regular-customers__part">
               <a class="regular-customers__list-links" href="">
                 <svg class="icon icon-company3 regular-customers__icons">
                   <use href="./img/page1/icons/sprite.svg#icon-company3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="regular-customers__part">
               <a class="regular-customers__list-links" href="">
                 <svg class="icon icon-company4 regular-customers__icons">
                   <use href="./img/page1/icons/sprite.svg#icon-company4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="regular-customers__part">
               <a class="regular-customers__list-links" href="">
                 <svg class="icon icon-company5 regular-customers__icons">
                   <use href="./img/page1/icons/sprite.svg#icon-company5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="regular-customers__part">
               <a class="regular-customers__list-links" href="">
                 <svg class="icon icon-company6 regular-customers__icons">
                   <use href="./img/page1/icons/sprite.svg#icon-company6"></use>
@@ -479,17 +481,18 @@
       </section>
     </main>
 
+    
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__flex-container">
-          <div>
+          <div class="footer__address-thumb">
             <div class="footer__logo">
               <a class="logo" href="./index.html"
                 ><span class="logo__blue--text">Web</span
                 ><span class="logo__white--text">Studio</span></a
               >
             </div>
-            <address>
+            <address >
               <ul class="footer__cotact-list">
                 <li class="footer__contact">
                   <a
@@ -596,7 +599,7 @@
     </footer>
 
     <!-- backdrop+modal -->
-
+    
     <div data-modal class="backdrop is-hidden">
      <div class="modal">
        
@@ -657,6 +660,43 @@
      </div>
     </div>
 
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle-burger-button js-close-menu">
+              <svg class="icon icon-closeModalIcon modal__close-icon">
+                <use
+                  href="./img/page1/icons/sprite.svg#icon-closeModalIcon"
+                ></use>
+              </svg>
+      </button>
+
+      <div class="menu__thumb">
+        <div>
+          <ul class="menu__nav-list">
+            <li class="menu__nav">Студія</li>
+            <li class="menu__nav">Портфоліо</li>
+            <li class="menu__nav">Контакти</li>
+          </ul>
+        </div>
+
+        <div >
+          <ul class="menu__contact-list">
+            <li class="menu__contact">+38 096 111 11 11</li>
+            <li class="menu__contact menu__contact--mail">info@devstudio.com</li>
+          </ul>
+          <ul class="menu__social-list">
+            <li class="menu__social">Instagram</li>
+            <li class="menu__social">Twitter</li>
+            <li class="menu__social">Facebook</li>
+            <li class="menu__social">LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script src="./script/mobile-menu.js"></script>
     <script src="./script/modal.js"></script>
   </body>
 </html>

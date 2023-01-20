@@ -1,12 +1,19 @@
 .hero {
     background-color: var(--dark-section-color);
     padding: 118px 0;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/page1/herobackground.jpg);
+    
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/page1/herobackground.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     max-width: 1600px;
     margin: 0 auto;
+
+    @media (min-deavice-pisel-ratio:2),
+    ( min-resolution: 192dpi) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/page1/herobackground2x.jpg);
+    }
 
     @media screen and (min-width: 1200px) {
         padding: 200px 0;

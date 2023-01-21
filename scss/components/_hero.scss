@@ -3,7 +3,7 @@
     padding: 118px 0;
     
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/page1/herobackground.jpg);
+        url(../img/page1/herobackground420.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -11,15 +11,27 @@
     max-width: 100%;  
     margin: 0 auto;
 
-    @media (min-deavice-pisel-ratio:2),
+    @media (min-deavice-pisel-ratio:2) and (max-width: 767px),
     ( min-resolution: 192dpi) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/page1/herobackground2x.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/page1/herobackground420@2x.jpg);
     }
+
+    @media (min-deavice-pisel-ratio:2) and (max-width: 1199px),
+    ( min-resolution: 192dpi) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/page1/herobackground767@2x.jpg);
+    }
+
+    @media (min-deavice-pisel-ratio:2) and (min-width: 1200px),
+    ( min-resolution: 192dpi) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/page1/herobackground@2x.jpg);
+    }
+
      @media screen and (min-width: 768px) {
-        max-width: 768px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/page1/herobackground768@2x.jpg);
     }
 
     @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/page1/herobackground.jpg);
         padding: 200px 0;
         max-width: 1600px;
     }

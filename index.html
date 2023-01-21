@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body style>
 
@@ -166,12 +166,23 @@
         <div class="wrapper">
           <h2 class="section-title section-title__gap">Наша команда</h2>
           <ul class="team__actor-list">
-            <li>
-              <img
-                width="270"
-                src="./img/page1/actor1.jpg"
-                alt="наш співробітник"
-              />
+            <li class="team__actor-thumb">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/page1/actor-420_1.jpg 1x,
+                ./img/page1/actor-420_@2x-4.jpg 2x">
+                <source media="(min-width: 768px)" srcset="
+                ./img/page1/actor-768_1.jpg 1x,
+                ./img/page1/actor-768@2x-1.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="./img/page1/actor1.jpg 1x,
+                ./img/page1/actor1@2x.jpg 2x">
+                 <img
+                  width="270"
+                  src="./img/page1/actor1.jpg"
+                  alt="наш співробітник"
+                />
+             
+              </picture>
+               
               <div class="team__actor-part">
                 <h3 class="team__actor-header">Ігор Дем'яненко</h3>
                 <p class="team__actor-role">Product Designer</p>
@@ -231,12 +242,21 @@
                 </ul>
               </div>
             </li>
-            <li class="team-part">
+            <li class="team__actor-thumb">
+               <picture>
+                <source media="(max-width: 767px)" srcset="./img/page1/actor-420_2.jpg 1x,
+                ./img/page1/actor-420_@2x-1.jpg 2x">
+                <source media="(min-width: 768px)" srcset="
+                ./img/page1/actor-768_2.jpg 1x,
+                ./img/page1/actor-768@2x-2.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="./img/page1/actor2.jpg 1x,
+                ./img/page1/actor2@2x.jpg 2x">
               <img
                 width="270"
                 src="./img/page1/actor2.jpg"
                 alt="наш співробітник"
               />
+               </picture>
               <div class="team__actor-part">
                 <h3 class="team__actor-header">Ольга Рєпіна</h3>
                 <p class="team__actor-role">Frontend Developer</p>
@@ -296,12 +316,21 @@
                 </ul>
               </div>
             </li>
-            <li class="team-part">
+            <li class="team__actor-thumb">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/page1/actor-420_3.jpg 1x,
+                ./img/page1/actor-420_@2x-2.jpg 2x">
+                <source media="(min-width: 768px)" srcset="
+                ./img/page1/actor-768_3.jpg 1x,
+                ./img/page1/actor-768@2x-3.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="./img/page1/actor3.jpg 1x,
+                ./img/page1/actor3@2x.jpg 2x">
               <img
                 width="270"
                 src="./img/page1/actor3.jpg"
                 alt="наш співробітник"
               />
+              </picture>
               <div class="team__actor-part">
                 <h3 class="team__actor-header">Микола Тарасов</h3>
                 <p class="team__actor-role">Marketing</p>
@@ -361,7 +390,15 @@
                 </ul>
               </div>
             </li>
-            <li class="team-part">
+            <li class="team__actor-thumb">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/page1/actor-420_4.jpg 1x,
+                ./img/page1/actor-420_@2x-3.jpg 2x">
+                <source media="(min-width: 768px)" srcset="
+                ./img/page1/actor-768_4.jpg 1x,
+                ./img/page1/actor-768@2x-4.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="./img/page1/actor4.jpg 1x,
+                ./img/page1/actor4@2x.jpg 2x">
               <img
                 width="270"
                 src="./img/page1/actor4.jpg"
